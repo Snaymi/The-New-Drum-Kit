@@ -55,9 +55,16 @@ margin: 0;
 }
 .drum-content{
     position: relative;
-    background-color: rgba(0, 0, 0, 0.375);
+    background-image: url('background/drum-background.png');
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
 }
 .drum-content::before{
  content: '';
@@ -68,12 +75,14 @@ margin: 0;
   filter: blur(10px);
   animation: rainbowShadow 5s ease infinite; /*Animation to create a rainbow effect*/
   z-index: -1; /* Put the box-shadow behind the element  and allow to click on the buttons*/
+
 }
 .drum-board-title{
-    width: 500px;
-}
-h1{
     text-align: center;
+    background: rgba(0, 0, 0, 0.603);
+    width: 300px;
+    border-radius: 5px;
+    color: #ffffff;
 }
 .drum-board{
     display: flex;
