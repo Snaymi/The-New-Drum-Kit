@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Nulato';
+  src: url('Fonts/nulato-thinitalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('Fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Full range for variable font */
+  font-style: normal;
+}
+body{
+background: #021236;
+background: linear-gradient(59deg,rgba(2, 18, 54, 1) 5%, rgba(73, 141, 230, 1) 100%);
+color: #fff;
+font-family: 'Nulato', 'Nunito Thin Italic', sans-serif;
+display:flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+padding: 0;
+margin: 0;
+}
+@keyframes spin{
+ 0% {transform: rotate(0deg);}
+ 100% {transform: rotate(360deg);}
+}
+@keyframes rainbowShadow {
+  0% {
+    box-shadow: 0 0 20px red;
+  }
+  14% {
+    box-shadow: 0 0 20px orange;
+  }
+  28% {
+    box-shadow: 0 0 20px yellow;
+  }
+  42% {
+    box-shadow: 0 0 20px green;
+  }
+  57% {
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+  }
+  71% {
+    box-shadow: 0 0 20px indigo;
+  }
+  85% {
+    box-shadow: 0 0 20px violet;
+  }
+  100% {
+    box-shadow: 0 0 20px red;
+  }
+}
+.drum-content{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.375);
+    border-radius: 10px;
+    
+}
+.drum-content::before{
+ content: '';
+  position: absolute;
+  width: 100%; /* Put de box-shadow inside all the width of the element*/
+  height: 100%; /* Put de box-shadow inside all the height of the element*/
+  border-radius: 16px;
+  filter: blur(10px);
+  animation: rainbowShadow 5s ease infinite; /*Animation to create a rainbow effect*/
+  z-index: -1; /* Put the box-shadow behind the element  and allow to click on the buttons*/
+}
+.drum-board-title{
+    width: 500px;
+}
+h1{
+    text-align: center;
+}
+.drum-board{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.drum-board button{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+    margin: 10px;
+    border: 1px;
+    border-radius: 10px;
+}
+.small-icon{
+    font-size: 30px;
+}
+.drum-board button .key{
+    font-size:15px;
+}
+.drum-board button .sound{
+    font-size: 5px;
+}
