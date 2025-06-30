@@ -55,38 +55,38 @@ margin: 0;
 }
 .drum-content{
     position: relative;
-    background-image: url('background/drum-background.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
+    background-image: url('background/drum-background.png');/*img background on the drum content*/
+    background-size: cover; /*corret the size of img background*/
+    background-position: center; /*centralize the img background*/
+    border-radius: 10px; /*rounds the border off the buttons frame*/
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    flex-direction: column; /*every div inside this frame will be align like a column*/
+    justify-content: center; /*every content will be centralized on the x axis*/
+    align-items: center;/*every content will be centralize on the y axis*/
+    padding: 20px; /*margin inside the element*/ 
 
 }
 .drum-content::before{
  content: '';
-  position: absolute;
+  position: absolute; /*the element is out of the normal flow*/
   width: 100%; /* Put de box-shadow inside all the width of the element*/
   height: 100%; /* Put de box-shadow inside all the height of the element*/
-  border-radius: 16px;
-  filter: blur(10px);
+  border-radius: 16px; /*background radius on rainbow */
+  filter: blur(10px); /*to blur the effect*/
   animation: rainbowShadow 5s ease infinite; /*Animation to create a rainbow effect*/
   z-index: -1; /* Put the box-shadow behind the element  and allow to click on the buttons*/
 
 }
 .drum-board-title{
-    text-align: center;
-    background: rgba(0, 0, 0, 0.603);
-    width: 300px;
-    border-radius: 5px;
-    color: #ffffff;
+    text-align: center; /* Centralize the drum title */
+    background: rgba(0, 0, 0, 0.603); /*background title*/
+    width: 300px; /*background width*/
+    border-radius: 5px; /*background border*/
+    color: #ffffff; /*background color title*/
 }
 .drum-board{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/**/
     justify-content: center;
     align-items: center;
 }
