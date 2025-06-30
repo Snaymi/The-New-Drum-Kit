@@ -29,28 +29,28 @@ margin: 0;
 }
 @keyframes rainbowShadow {
   0% {
-    box-shadow: 0 0 20px red;
+    box-shadow: 0 0 50px red;
   }
   14% {
-    box-shadow: 0 0 20px orange;
+    box-shadow: 0 0 50px orange;
   }
   28% {
-    box-shadow: 0 0 20px yellow;
+    box-shadow: 0 0 50px yellow;
   }
   42% {
-    box-shadow: 0 0 20px green;
+    box-shadow: 0 0 50px green;
   }
   57% {
-    box-shadow: 0 0 20px rgb(0, 0, 0);
+    box-shadow: 0 0 50px rgb(0, 0, 0);
   }
   71% {
-    box-shadow: 0 0 20px indigo;
+    box-shadow: 0 0 50px indigo;
   }
   85% {
-    box-shadow: 0 0 20px violet;
+    box-shadow: 0 0 50px violet;
   }
   100% {
-    box-shadow: 0 0 20px red;
+    box-shadow: 0 0 50px red;
   }
 }
 .drum-content{
@@ -74,7 +74,7 @@ margin: 0;
   height: 100%; /* Put de box-shadow inside all the height of the element*/
   border-radius: 16px; /*background radius on rainbow */
   filter: blur(10px); /*to blur the effect*/
-  animation: rainbowShadow 5s ease infinite; /*Animation to create a rainbow effect*/
+  animation: rainbowShadow 8s ease infinite; /*Animation to create a rainbow effect*/
   z-index: -1; /* Put the box-shadow behind the element  and allow to click on the buttons*/
 
 
