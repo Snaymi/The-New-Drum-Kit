@@ -86,7 +86,7 @@ margin: 0;
 }
 .drum-board{
     display: flex;
-    flex-wrap: wrap;/**/
+    flex-wrap: wrap;/*allows the items to wrap to the next line IF is necessary*/
     justify-content: center;
     align-items: center;
 }
