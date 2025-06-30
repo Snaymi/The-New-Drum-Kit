@@ -61,9 +61,10 @@ margin: 0;
     border-radius: 10px; /*rounds the border off the buttons frame*/
     display: flex;
     flex-direction: column; /*every div inside this frame will be align like a column*/
-    justify-content: center; /*every content will be centralized on the x axis*/
-    align-items: center;/*every content will be centralize on the y axis*/
+    align-items: center; /*every content will be centralized on the y axis*/
+    justify-content: center; /*every content will be centralized on the x axis - the animation outside needs this, why?*/
     padding: 20px; /*margin inside the element*/ 
+    width: 600px; /*width of the drum content*/
 
 }
 .drum-content::before{
@@ -76,13 +77,16 @@ margin: 0;
   animation: rainbowShadow 5s ease infinite; /*Animation to create a rainbow effect*/
   z-index: -1; /* Put the box-shadow behind the element  and allow to click on the buttons*/
 
+
 }
 .drum-board-title{
+  font-size: 30px; /*font size of the drum title*/
     text-align: center; /* Centralize the drum title */
     background: rgba(0, 0, 0, 0.603); /*background title*/
-    width: 300px; /*background width*/
+    width: 500px; /*background width*/
     border-radius: 5px; /*background border*/
     color: #ffffff; /*background color title*/
+    padding: 10px; /*padding inside the title*/
 }
 .drum-board{
     display: flex;
@@ -93,21 +97,25 @@ margin: 0;
 .drum-board button{
     display: flex;
     flex-direction: column;
-    width: 50px;
-    align-items: center;
+    width: 100px;
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: 0 0 5px black;
     margin: 10px;
     border: 1px;
     border-radius: 10px;
+    justify-content: center;
+  
+  
 }
 .small-icon{
-    font-size: 30px;
+    font-size: 60px;
+    padding: 10px 0 0 0;
 }
 .drum-board button .key{
-    font-size:15px;
+    font-size: 30px;
 }
 .drum-board button .sound{
-    font-size: 5px;
+    font-size: 15px;
+    padding: 1px 0 10px;
 }
