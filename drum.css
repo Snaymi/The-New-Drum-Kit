@@ -53,6 +53,14 @@ margin: 0;
     box-shadow: 0 0 50px red;
   }
 }
+.headphone{
+  position: absolute; /*position the element outside the normal flow*/
+  display: flex;
+  top: -20%;
+  left: 0;
+  width: 100%; /*width of the headphone icon*/
+  height: 100% /*height of the headphone icon*/
+}
 .drum-content{
     position: relative;
     background-image: url('background/drum-background.png');/*img background on the drum content*/
@@ -65,7 +73,7 @@ margin: 0;
     justify-content: center; /*every content will be centralized on the x axis - the animation outside needs this, why?*/
     padding: 20px; /*margin inside the element*/ 
     width: 600px; /*width of the drum content*/
-
+   ;
 }
 .drum-content::before{
  content: '';
