@@ -13,9 +13,8 @@
 
 body{/*all body content*/
 background-image: /*background image on the body*/
-  linear-gradient(to right, rgba(1, 19, 53, 0.776), rgba(5, 63, 110, 0.6)),
-  url('background/headphone.png');
-background-size: 1600px 950px;
+  url('background/body-background.gif');
+background-size: cover;
 background-repeat: no-repeat; /* Do not repeat the background image */
 background-position: center; /* Center the background image */
 background-blend-mode: overlay; /* Blend mode to combine background image and color */
@@ -73,14 +72,14 @@ margin: 0; /*remove margin default browser inside the body*/
 }
 .avatar-content .avatar-img{
  width: 100px;
- background-color: rgba(2, 64, 105, 0.486);
+ background-color: rgba(3, 110, 182, 0.75);
  border-radius: 50%; /*rounds the avatar*/
  border: 2px solid #ffffff79;
 }
 .avatar-content .like-img{
  width: 30px; /*width of the arrow*/
  height: 30px; /*height of the arrow*/
- background-color: rgba(2, 64, 105, 0.158);
+ background-color: rgba(4, 104, 172, 0.829);
  border-radius: 50%; /*rounds the arrow*/
  padding: 2px;
  border: 2px solid #ffffff25;
@@ -98,12 +97,13 @@ margin: 0; /*remove margin default browser inside the body*/
 }
 .drum-content{
     position: relative;
-    background-image: url('background/background-board.jpg');
+    background-image: url('background/drum-background.gif');
     background-size: cover; /*cover the entire element with the background image*/
     background-position: center; /*center the background image*/
     border-radius: 10px; /*rounds the border off the buttons frame*/
+    border: 1px solid #000; /*border of the buttons frame*/
     display: flex;
-    box-shadow: 0 0 10px #00111a; /*shadow*/
+    box-shadow: 0 0 20px #00111a; /*shadow*/
     flex-direction: column; /*every div inside this frame will be align like a column*/
     align-items: center; /*every content will be centralized on the y axis*/
     justify-content: center; /*every content will be centralized on the x axis - the animation outside needs this, why?*/
@@ -154,13 +154,13 @@ margin: 0; /*remove margin default browser inside the body*/
 .drum-board button:hover{
   background: rgba(75, 97, 98, 0.808); /*background on hover*/
   color: rgb(0, 221, 255); /*text color on hover*/
-  background-image: url('background/dancing.gif'); /*background image on hover*/
-  background-size: cover; /*cover the entire element with the background image*/
-  background-position: center; /*center the background image*/
 }
 .drum-board button:active{
   background: rgba(72, 75, 243, 0.863); /*background on hover*/
-  color: rgb(255, 255, 255); /*text color on hover*/
+  color: rgba(255, 255, 255, 0); /*text color on hover*/
+  background-image: url('background/sound-bar.gif'); /*background image on hover*/
+  background-size: cover; /*cover the entire element with the background image*/
+  background-position: center; /*center the background image*/
 }
 .small-icon{
     font-size: 35px;
