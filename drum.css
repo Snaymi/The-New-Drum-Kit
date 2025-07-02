@@ -38,28 +38,28 @@ margin: 0; /*remove margin default browser inside the body*/
 }
 @keyframes rainbowShadow {
   0% {
-    box-shadow: 0 0 50px red;
+    box-shadow: 0 0 10px #6f00ff;
   }
   14% {
-    box-shadow: 0 0 50px orange;
+    box-shadow: 0 0 10px #8b25eb;
   }
   28% {
-    box-shadow: 0 0 50px yellow;
+    box-shadow: 0 0 10px #a751ee;
   }
   42% {
-    box-shadow: 0 0 50px green;
+    box-shadow: 0 0 10px #bd75e9;
   }
   57% {
-    box-shadow: 0 0 50px rgb(0, 0, 0);
+    box-shadow: 0 0 10px #a44bed;
   }
   71% {
-    box-shadow: 0 0 50px indigo;
+    box-shadow: 0 0 10px #8827e3;
   }
   85% {
-    box-shadow: 0 0 50px violet;
+    box-shadow: 0 0 10px #700ff0;
   }
   100% {
-    box-shadow: 0 0 50px red;
+    box-shadow: 0 0 10px #6a00ff;
   }
 }
 .avatar-content .avatar-instructions{
@@ -71,10 +71,11 @@ margin: 0; /*remove margin default browser inside the body*/
  animation: blink 1.5s infinite; /* Blinking effect for instructions */
 }
 .avatar-content .avatar-img{
- width: 100px;
+ width: 70px;
  background-color: rgba(3, 110, 182, 0.75);
  border-radius: 50%; /*rounds the avatar*/
  border: 2px solid #ffffff79;
+ margin: 5px 0 5px 10px;;
 }
 .avatar-content .like-img{
  width: 30px; /*width of the arrow*/
@@ -83,6 +84,7 @@ margin: 0; /*remove margin default browser inside the body*/
  border-radius: 50%; /*rounds the arrow*/
  padding: 2px;
  border: 2px solid #ffffff25;
+ margin: 0 10px 0 0;
 
 }
 .avatar-content{
@@ -90,10 +92,12 @@ margin: 0; /*remove margin default browser inside the body*/
   width: 245px; /*width of the avatar*/
   height: 100px; /*height of the avatar*/
    top: 10%;
-   left: 10%;
+   left: 11%;
  transform: translateX(-50%) translateY(-50%);
  display: flex;
  align-items: center;
+ background-color: rgba(6, 2, 68, 0.557); /*semi-transparent background*/
+ border-radius: 20px; /*rounds the border off the avatar*/
 }
 .drum-content{
     position: relative;
@@ -115,20 +119,16 @@ margin: 0; /*remove margin default browser inside the body*/
   position: absolute; /*the element is out of the normal flow*/
   width: 100%; /* Put de box-shadow inside all the width of the element*/
   height: 100%; /* Put de box-shadow inside all the height of the element*/
-  border-radius: 16px; /*background radius on rainbow */
-  filter: blur(10px); /*to blur the effect*/
-  animation: rainbowShadow 8s ease infinite; /*Animation to create a rainbow effect*/
+  animation: rainbowShadow 10s ease infinite; /*Animation to create a rainbow effect*/
   z-index: -1; /* Put the box-shadow behind the element  and allow to click on the buttons*/
-
-
+  filter: blur(2px); /*blur the box-shadow*/
 }
 .drum-board-title{
   font-size: 20px; /*font size of the drum title*/
     text-align: center; /* Centralize the drum title */
-    background: rgba(0, 0, 0, 0.603); /*background title*/
     width: 350px; /*background width*/
     border-radius: 5px; /*background border*/
-    color:  rgb(137, 104, 255);
+    color:  rgb(246, 244, 252);
     padding: 10px; /*padding inside the title*/
 }
 .drum-board{
@@ -138,7 +138,7 @@ margin: 0; /*remove margin default browser inside the body*/
     align-items: center;
 }
 .drum-board button{
-   background: rgb(142, 120, 216);
+   background: rgb(21, 1, 86);
     display: flex;
     flex-direction: column;
     width: 80px;
@@ -149,11 +149,11 @@ margin: 0; /*remove margin default browser inside the body*/
     border: 1px;
     border-radius: 10px;
     justify-content: center;
-    color:  rgb(2, 3, 88);
+    color:  rgb(246, 244, 252);
 }
 .drum-board button:hover{
-  background: rgba(75, 97, 98, 0.808); /*background on hover*/
-  color: rgb(0, 221, 255); /*text color on hover*/
+  background: rgba(255, 255, 255, 0.808); /*background on hover*/
+  color: rgb(0, 0, 0); /*text color on hover*/
 }
 .drum-board button:active{
   background: rgba(72, 75, 243, 0.863); /*background on hover*/
