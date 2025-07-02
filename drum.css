@@ -98,7 +98,8 @@ margin: 0; /*remove margin default browser inside the body*/
 }
 .drum-content{
     position: relative;
-    background-image: url('background/drum-background.png');/*img background on the drum content*/
+    background-image: url('background/drum-background.png'); /*img background on the drum content*/
+  
     background-size: 100% 100%; /*corret the size of img background*/
     background-repeat: no-repeat; /*do not repeat the img background*/
     border-radius: 10px; /*rounds the border off the buttons frame*/
@@ -138,6 +139,7 @@ margin: 0; /*remove margin default browser inside the body*/
     align-items: center;
 }
 .drum-board button{
+   background: #d556;
     display: flex;
     flex-direction: column;
     width: 80px;
@@ -148,150 +150,7 @@ margin: 0; /*remove margin default browser inside the body*/
     border: 1px;
     border-radius: 10px;
     justify-content: center;
-    color:  rgba(32, 4, 134, 0.774);
-}
-.drum-board button:hover{
-  background: rgba(133, 237, 245, 0.808); /*background on hover*/
-}
-.drum-board button:active{
-  background: rgba(72, 75, 243, 0.863); /*background on hover*/
-}
-.small-icon{
-    font-size: 35px;
-    padding: 10px 0 0 0;
-}
-.drum-board button .key{
-    font-size: 15px;
-}
-.drum-board button .sound{
-    font-size: 10px;
-    padding: 1px  2px 10px;
-};
-color: #fff;
-font-family: 'Nulato', 'Nunito Thin Italic', sans-serif;
-display:flex;
-justify-content:center;
-align-items: center;
-height: 100vh;
-width: 100vw;
-padding: 0;
-margin: 0;
-}
-@keyframes spin{
- 0% {transform: rotate(0deg);}
- 100% {transform: rotate(360deg);}
-}
-@keyframes rainbowShadow {
-  0% {
-    box-shadow: 0 0 50px red;
-  }
-  14% {
-    box-shadow: 0 0 50px orange;
-  }
-  28% {
-    box-shadow: 0 0 50px yellow;
-  }
-  42% {
-    box-shadow: 0 0 50px green;
-  }
-  57% {
-    box-shadow: 0 0 50px rgb(0, 0, 0);
-  }
-  71% {
-    box-shadow: 0 0 50px indigo;
-  }
-  85% {
-    box-shadow: 0 0 50px violet;
-  }
-  100% {
-    box-shadow: 0 0 50px red;
-  }
-}
-.avatar-content .avatar-instructions{
- color: #ffffff;
- font-size: 12px;
- font-weight: bold;
- text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
- padding: 5px
-}
-.avatar-content .avatar-img{
- width: 100px;
- background-color: rgba(2, 64, 105, 0.486);
- border-radius: 50%; /*rounds the avatar*/
- border: 2px solid #ffffff79;
-}
-.avatar-content .like-img{
- width: 30px; /*width of the arrow*/
- height: 30px; /*height of the arrow*/
- background-color: rgba(2, 64, 105, 0.158);
- border-radius: 50%; /*rounds the arrow*/
- padding: 2px;
- border: 2px solid #ffffff25;
-
-}
-.avatar-content{
-  position: absolute; /*position the element outside the normal flow*/
-  width: 245px; /*width of the avatar*/
-  height: 100px; /*height of the avatar*/
-   top: 10%;
-   left: 10%;
- transform: translateX(-50%) translateY(-50%);
- display: flex;
- align-items: center;
-}
-.drum-content{
-    position: relative;
-    background-image: url('background/drum-background.png');/*img background on the drum content*/
-    background-size: 100% 100%; /*corret the size of img background*/
-    background-repeat: no-repeat; /*do not repeat the img background*/
-    border-radius: 10px; /*rounds the border off the buttons frame*/
-    display: flex;
-  
-    flex-direction: column; /*every div inside this frame will be align like a column*/
-    align-items: center; /*every content will be centralized on the y axis*/
-    justify-content: center; /*every content will be centralized on the x axis - the animation outside needs this, why?*/
-    padding: 20px; /*margin inside the element*/ 
-    width: 350px; /*width of the drum content*/
-}
-.drum-content::before{
- content: '';
-  position: absolute; /*the element is out of the normal flow*/
-  width: 100%; /* Put de box-shadow inside all the width of the element*/
-  height: 100%; /* Put de box-shadow inside all the height of the element*/
-  border-radius: 16px; /*background radius on rainbow */
-  filter: blur(10px); /*to blur the effect*/
-  animation: rainbowShadow 8s ease infinite; /*Animation to create a rainbow effect*/
-  z-index: -1; /* Put the box-shadow behind the element  and allow to click on the buttons*/
-
-
-}
-.drum-board-title{
-  font-size: 20px; /*font size of the drum title*/
-    text-align: center; /* Centralize the drum title */
-    background: rgba(0, 0, 0, 0.603); /*background title*/
-    width: 350px; /*background width*/
-    border-radius: 5px; /*background border*/
-    color:  rgb(137, 104, 255);
-    padding: 10px; /*padding inside the title*/
-}
-.drum-board{
-    display: flex;
-    flex-wrap: wrap;/*allows the items to wrap to the next line IF is necessary*/
-    justify-content: center;
-    align-items: center;
-}
-.drum-board button{
-    display: flex;
-    flex-direction: column;
-    width: 80px;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0 0 5px black;
-    margin: 10px;
-    border: 1px;
-    border-radius: 10px;
-    justify-content: center;
-    color:  rgba(32, 4, 134, 0.774);
+    color:  rgb(0, 4, 255);
 }
 .drum-board button:hover{
   background: rgba(133, 237, 245, 0.808); /*background on hover*/
