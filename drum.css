@@ -1,4 +1,4 @@
-@font-face {
+@font-face {/*font-face to import fonts*/
   font-family: 'Nulato';
   src: url('Fonts/nulato-thinitalic.otf') format('opentype');
   font-weight: normal;
@@ -10,32 +10,30 @@
   font-weight: 100 900; /* Full range for variable font */
   font-style: normal;
 }
-body{
- 0background-image: url('background/headphone.png');
-  font-family: 'Nulato';
-  src: url('Fonts/nulato-thinitalic.otf') format('opentype');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Nunito';
-  src: url('Fonts/Nunito-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900; /* Full range for variable font */
-  font-style: normal;
-}
-body{
-background-image: url('')
-color: #fff;
+
+body{/*all body content*/
+background-image: /*background image on the body*/
+  linear-gradient(to right, rgba(1, 19, 53, 0.776), rgba(5, 63, 110, 0.6)),
+  url('background/headphone.png');
+background-size: 1600px 950px;
+background-repeat: no-repeat; /* Do not repeat the background image */
+background-position: center; /* Center the background image */
+background-blend-mode: overlay; /* Blend mode to combine background image and color */
+color: #fff; /*text color*/
 font-family: 'Nulato', 'Nunito Thin Italic', sans-serif;
 display:flex;
 justify-content:center;
 align-items: center;
 height: 100vh;
 width: 100vw;
-padding: 0;
-margin: 0;
+padding: 0; /*remove padding default browser inside the body*/
+margin: 0; /*remove margin default browser inside the body*/
 }
-@keyframes spin{
+@keyframes blink{/*animation to blink the avatar-instructions*/
+  0%, 100%{ opacity: 1;}
+  50% {opacity: 0;}
+}
+@keyframes spin{/*animation to spin the drum::before content*/
  0% {transform: rotate(0deg);}
  100% {transform: rotate(360deg);}
 }
@@ -70,7 +68,8 @@ margin: 0;
  font-size: 12px;
  font-weight: bold;
  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
- padding: 5px
+ padding: 5px;
+ animation: blink 1.5s infinite; /* Blinking effect for instructions */
 }
 .avatar-content .avatar-img{
  width: 100px;
