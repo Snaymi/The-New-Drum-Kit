@@ -10,10 +10,9 @@
   font-weight: 100 900; /* Full range for variable font */
   font-style: normal;
 }
-
 body{/*all body content*/
-background-image: /*background image on the body*/
-  url('background/body-background.gif');
+background-image: /*background image on the body*/  
+url('background/body-background.gif');
 background-size: cover;
 background-repeat: no-repeat; /* Do not repeat the background image */
 background-position: center; /* Center the background image */
@@ -27,6 +26,23 @@ height: 100vh;
 width: 100vw;
 padding: 0; /*remove padding default browser inside the body*/
 margin: 0; /*remove margin default browser inside the body*/
+}
+.headphone-box{/*headphone image*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 80%;
+  object-fit: scale-down; /*scale down the image to fit the body*/;
+  position: absolute; /*position the image outside the normal flow*/
+}
+.headphone-img{/*headphone image*/
+  position: absolute; /*position the image outside the normal flow*/
+  object-fit: contain; /*scale down the image to fit the body*/
+  top: 6%; /*position the image in the middle of the body*/
+  left: 7%; /*position the image in the middle of the body*/
+  transform: translateY(-50%) translateX(-50%) rotate(0deg); /*position the image in the middle of the body*/
+  width: 50px; /*width of the headphone image*/
 }
 @keyframes blink{/*animation to blink the avatar-instructions*/
   0%, 100%{ opacity: 1;}
