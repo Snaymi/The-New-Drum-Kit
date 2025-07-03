@@ -120,8 +120,8 @@ margin: 0; /*remove margin default browser inside the body*/
     background-image: url('background/drum-background.gif');
     background-size: cover; /*cover the entire element with the background image*/
     background-position: center; /*center the background image*/
+    background-repeat: no-repeat; /* Do not repeat the background image */
     border-radius: 10px; /*rounds the border off the buttons frame*/
-    border: 1px solid #000; /*border of the buttons frame*/
     display: flex;
     box-shadow: 0 0 20px #00111a; /*shadow*/
     flex-direction: column; /*every div inside this frame will be align like a column*/
