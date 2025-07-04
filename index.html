@@ -21,52 +21,61 @@
             <div class="drum-board"> <!--Where the buttons are located-->
                 <button>
                     <i class="ph-thin ph-hands-clapping small-icon"></i>
-                    <span class = "key">A</span> <!--Key A (span is  a generic inline container (div))-->
-                    <span class = "sound">Clap</span> <!--Sound of the key A-->
+                    <div data-key="65" class="key">a</div> 
+                    <div class = "sound">Clap</div> <!--Sound of the key A, Key A (span is  a generic inline container (div))-->
                 </button>
                 <button>
                     <i class="ph-fill ph-vinyl-record small-icon"></i>
-                    <span class = "key">s</span> <!--Key A (span is  a generic inline container (div))-->
-                    <span class = "sound">Hint</span> <!--Sound of the key A-->
+                    <div data-key="83" class="key">s</div> 
+                    <span class = "sound">Hinat</span> <!--Sound of the key A-->
                   </button>
                   <button>
                     <i class="ph-thin ph-waveform small-icon"></i>
-                    <span class = "key">d</span> <!--Key A (span is  a generic inline container (div))-->
+                    <div data-key="68" class="key">d</div> 
                     <span class = "sound">Kick</span> <!--Sound of the key A-->
                   </button>
                   <button>
                     <i class="ph-duotone ph-wave-triangle small-icon"></i>
-                    <span class = "key">f</span> <!--Key A (span is  a generic inline container (div))-->
-                    <span class = "sound">Openhat</span> <!--Sound of the key A-->
+                    <div data-key="70" class="key">f</div> 
+                    <div class="sound">Openhat</div> <!--Sound of the key A-->
                   </button>
                   <button>
                   <i class="ph-bold ph-speaker-hifi small-icon"></i>
-                    <span class = "key">g</span> <!--Key A (span is  a generic inline container (div))-->
+                    <div data-key="71" class="key">g</div>
                     <span class = "sound">Boom</span> <!--Sound of the key A-->
                   </button>
                   <button>
                   <i class="ph-thin ph-music-notes small-icon"></i>
-                    <span class = "key">h</span> <!--Key A (span is  a generic inline container (div))-->
+                    <div data-key="72" class="key">h</div> 
                     <span class = "sound">Hide</span> <!--Sound of the key A-->
                   </button>
                   <button>
                   <i class="ph-light ph-equalizer small-icon"></i>
-                    <span class = "key">j</span> <!--Key A (span is  a generic inline container (div))-->
+                    <div data-key="74" class="key">j</div>
                     <span class = "sound">Snare</span> <!--Sound of the key A-->
                   </button>
                   <button>
                   <i class="ph-thin ph-piano-keys small-icon"></i>
-                    <span class = "key">k</span> <!--Key A (span is  a generic inline container (div))-->
+                    <div data-key="75" class="key">k</div>
                     <span class = "sound">Tom</span> <!--Sound of the key A-->
                   </button>
                   <button>
                   <i class="ph-light ph-bell-ringing small-icon"></i>
-                    <span class = "key">l</span> <!--Key A (span is  a generic inline container (div))-->
+                    <div data-key="76" class="key">l</div> 
                     <span class = "sound">Tink</span> <!--Sound of the key A-->
                   </button>
             </div>
         </div>
-  <script src="drum.js"></script>
-  <audio src="sounds/clap.mp3"></audio>
+  <script src="drum.js"></script> <!-- JavaScript file to handle the drum kit functionality -->
+  <audio data-key="65" src="sounds/clap.mp3"></audio>
+  <audio data-key="83" src="sounds/hihat.mp3"></audio>
+  <audio data-key="68" src="sounds/kick.mp3"></audio>
+  <audio data-key="70" src="sounds/openhat.mp3"></audio>
+  <audio data-key="71" src="sounds/boom.mp3"></audio>
+  <audio data-key="72" src="sounds/ride.mp3"></audio>
+  <audio data-key="74" src="sounds/snare.mp3"></audio>
+  <audio data-key="75" src="sounds/tom.mp3"></audio>
+  <audio data-key="76" src="sounds/tink.mp3"></audio>
+<!-- The audio elements are used to play the sounds associated with each key -->
 </body>
 </html>
